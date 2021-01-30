@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.chat-div{
+    margin-top: 10px;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.left{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.add{
+    background-color: purple;
+    color: white;
+}
+.recv{
+    background-color: blue;
+    color: white;
+}
+.send{
+    background-color: #f1f1f1;
+    color: black;
+}
+body, .send-msg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.send-msg{
+    width: 100vw;
+}
+.msg{
+    padding: 10px;
+    text-align: center;
+    border-radius: 7px;
+}
+.msg::selection{
+    color: white;
+    background-color: purple;
+}
+.show-msg{
+    width: 95vw;
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.send-msg{
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+}
+#msg{
+    width: 60%;
+    height: 70%;
+    padding-left: 5px;
+    font-size: larger;
+}
+#send{
+    width: 10%;
+    height: 70%;
+    color: white;
+    background-color: blue;
+    font-size: large;
+}
